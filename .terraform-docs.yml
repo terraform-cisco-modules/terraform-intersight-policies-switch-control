@@ -3,12 +3,11 @@ version: '>= 0.14.0'
 formatter: markdown table
 
 content: |-
-  [![Tests](https://github.com/terraform-cisco-modules/terraform-intersight-policies-adapter-configuration/actions/workflows/test.yml/badge.svg)](https://github.com/terraform-cisco-modules/terraform-intersight-policies-adapter-configuration/actions/workflows/test.yml)
-  # Terraform Intersight Policies - Adapter Configuration
-  Manages Intersight Adapter Configuration Policies
+  # Terraform Intersight Policies - Switch Control
+  Manages Intersight Switch Control Policies
   
   Location in GUI:
-  `Policies` » `Create Policy` » `Adapter Configuration`
+  `Policies` » `Create Policy` » `Switch Control`
 
   ## Example
 
@@ -17,14 +16,14 @@ content: |-
   {{ include "examples/complete/main.tf" }}
   ```
 
+  ### provider.tf
+  ```hcl
+  {{ include "examples/complete/provider.tf" }}
+  ```
+
   ### variables.tf
   ```hcl
   {{ include "examples/complete/variables.tf" }}
-  ```
-
-  ### versions.tf
-  ```hcl
-  {{ include "examples/complete/versions.tf" }}
   ```
 
   ## Environment Variables
