@@ -40,10 +40,10 @@ resource "intersight_fabric_switch_control_policy" "switch_control" {
   ethernet_switching_mode        = var.ethernet_switching_mode
   fc_switching_mode              = var.fc_switching_mode
   name                           = var.name
-  vlan_port_optimization_enabled = var.vlan_optimization
+  vlan_port_optimization_enabled = var.vlan_port_count_optimization
   mac_aging_settings {
-    mac_aging_option = var.mac_aging_option
-    mac_aging_time   = var.mac_aging_option == "Custom" ? var.mac_aging_time : null
+    mac_aging_option = var.mac_address_table_aging
+    mac_aging_time   = var.mac_address_table_aging == "Custom" ? var.mac_aging_time : null
   }
   organization {
     moid = length(

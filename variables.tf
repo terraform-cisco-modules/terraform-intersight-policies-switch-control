@@ -29,7 +29,7 @@ variable "fc_switching_mode" {
   type        = string
 }
 
-variable "mac_aging_option" {
+variable "mac_address_table_aging" {
   default     = "Default"
   description = <<-EOT
   This specifies one of the option to configure the MAC address aging time.
@@ -86,7 +86,7 @@ variable "udld_recovery_action" {
   type        = string
 }
 
-variable "vlan_optimization" {
+variable "vlan_port_count_optimization" {
   default     = false
   description = "To enable or disable the VLAN port count optimization."
   type        = bool
