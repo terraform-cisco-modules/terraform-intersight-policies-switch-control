@@ -9,6 +9,12 @@ variable "description" {
   type        = string
 }
 
+variable "domain_profiles" {
+  default     = {}
+  description = "Map for Moid based Domain Profile Sources."
+  type        = any
+}
+
 variable "ethernet_switching_mode" {
   default     = "end-host"
   description = <<-EOT
@@ -44,6 +50,12 @@ variable "mac_aging_time" {
   default     = 14500
   description = "Define the MAC address aging time in seconds.  Range is between 120 to 918000, in multiples of 5, when mac_aging_option is set to Custom."
   type        = string
+}
+
+variable "moids" {
+  default     = false
+  description = "Flag to Determine if pools and policies should be data sources or if they already defined as a moid."
+  type        = bool
 }
 
 variable "name" {
