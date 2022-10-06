@@ -60,7 +60,6 @@ func TestFull(t *testing.T) {
 	  "MacAgingTime": 14500,
 	  "ObjectType": "fabric.MacAgingSettings"
 	},
-	"Name": "switch-ctrl",
 	"UdldSettings": {
 	  "ClassId": "fabric.UdldGlobalSettings",
 	  "MessageInterval": 15,
